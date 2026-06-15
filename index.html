@@ -70,6 +70,33 @@
             width: 100%;
             height: auto;
         }
+        /* Ajustes para Pantallas Pequeñas (Celulares y Tablets) */
+        @media (max-width: 768px) {
+            #hero {
+                /* Cambia la dirección de horizontal a vertical */
+                flex-direction: column; 
+                text-align: center;
+                padding: 40px 5%;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem; /* Achicamos un poco el título para móvil */
+            }
+
+            .hero-visual {
+                max-width: 90%;
+            }
+
+            nav {
+                text-align: center;
+                padding: 20px 5%;
+            }
+        }
     </style>
 </head>
 <body>
